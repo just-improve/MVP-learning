@@ -1,9 +1,6 @@
 package com.example.wiesiek.mvphelloworld.Presenter;
 
-import android.os.Handler;
-
 import com.example.wiesiek.mvphelloworld.InterfejsyKaty.ISynchronousLoginInteractor;
-import com.example.wiesiek.mvphelloworld.InterfejsyKaty.OnLoginFinishedListener;
 
 /**
  * Created by Wiesiek on 2017-10-06.
