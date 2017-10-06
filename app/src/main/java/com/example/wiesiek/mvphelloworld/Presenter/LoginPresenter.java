@@ -16,14 +16,14 @@ public class LoginPresenter implements ILoginPresenter, OnLoginFinishedListener 
     public LoginPresenter(ILoginView login){
         this.login=login;
          asyncLoginInteractor = new AsyncLoginInteractor();
-        synchronousLoginInteractor = new SynchronousLoginInteractor();
+//        synchronousLoginInteractor = new SynchronousLoginInteractor();
 
     }
 
     @Override
     public void AttemptLogin(String username, String password) {
-//        asyncLoginInteractor.validateCredentialsAsync(this, username,password);
-        synchronousLoginInteractor.validatedCredentials(this, username,password);
+        asyncLoginInteractor.validateCredentialsAsync(this, username,password);
+//        synchronousLoginInteractor.validatedCredentials(this, username,password);
     }
 
     @Override

@@ -5,5 +5,5 @@ package com.example.wiesiek.mvphelloworld.InterfejsyKaty;
  */
 
 public interface ISynchronousLoginInteractor {
-    void validatedCredentials(OnLoginFinishedListener onLoginFinishedListener,String username, String password);
+    boolean validatedCredentials(String username, String password);
 }
